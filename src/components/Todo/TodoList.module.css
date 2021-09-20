@@ -1,0 +1,55 @@
+.todo_list {
+  list-style: none;
+  /* margin-top: 50px; */
+  /* height: 500px; */
+  max-height: 500px;
+  overflow: auto;
+}
+.todo_filter {
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: space-between;
+}
+.text {
+  display: flex;
+  justify-content: center;
+
+  font-size: 2rem;
+  margin: 0;
+}
+.todo_delete_button {
+  margin-top: 50px;
+  width: 47%;
+  background-color: #db3345;
+}
+.todo_filter_button {
+  width: 30%;
+  background-color: #16a3b7;
+}
+.button_container {
+  height: 135px;
+  display: flex;
+  justify-content: space-around;
+
+  flex-direction: column;
+}
+.todo_filter button {
+  display: flex;
+  font: inherit;
+
+  cursor: pointer;
+
+  height: 40px;
+  padding: 1rem 2rem;
+
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: 50px;
+  border: none;
+}
+.todo_filter button:hover {
+  color: #16a3b7;
+  background-color: #002024;
+}

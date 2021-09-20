@@ -1,0 +1,68 @@
+.todo_item {
+  display: flex;
+  padding: 0 20px;
+  width: 100%;
+  margin-top: 50px;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo_item form button {
+  display: none;
+}
+.todo_item form input {
+  width: 100%;
+}
+.border_first {
+  border-radius: 5px 5px 0 0;
+  background-color: red;
+}
+.todo_item__icons {
+  display: flex;
+  width: 120px;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+}
+.todo_item__icons input {
+  transform: scale(1.7);
+}
+.todo_item__icons img {
+  width: 35px;
+}
+.space {
+  display: flex;
+  flex-grow: 1;
+}
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.is_checked {
+  text-decoration: line-through;
+  color: red;
+  width: 90%;
+}
+.not_checked {
+  color: black;
+  width: 90%;
+}
+.edit_form {
+  width: 90%;
+}
+.edit_form input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}

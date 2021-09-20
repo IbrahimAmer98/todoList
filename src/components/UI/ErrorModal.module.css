@@ -1,0 +1,64 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+.content {
+  font-size: 1.2rem;
+}
+.modal {
+  position: fixed;
+  top: 30vh;
+  left: 10%;
+  width: 80%;
+  z-index: 100;
+  overflow: hidden;
+  background-color: white;
+}
+
+.header {
+  background: #16a3b7;
+  padding: 1rem;
+}
+
+.header h2 {
+  margin: 0;
+  color: white;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.actions button {
+  background-color: #16a3b7;
+  border: none;
+  width: 80px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.actions button:hover {
+  color: #16a3b7;
+  background-color: #002024;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+    background-color: white;
+  }
+}

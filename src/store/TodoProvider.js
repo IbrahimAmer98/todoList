@@ -8,9 +8,8 @@ const defaultTodoState = {
 
 const todoReducer = (state, action) => {
   if (action.type === "ADD") {
-    // console.log("ADD");
     const updatedItems = state.items.concat(action.item);
-    // console.log(updatedItems);
+
     return {
       items: updatedItems,
     };
@@ -25,18 +24,14 @@ const todoReducer = (state, action) => {
 
   if (action.type === "EDIT") {
     const flag = action.payload.flag;
-    console.log(flag);
+
     const itemDoneIndex = state.items.findIndex(
       (item) => item.id === action.payload.item.id
     );
     const itemEdit = state.items[itemDoneIndex];
-    console.log("hey");
-    console.log(itemEdit);
+
     let updatedItem;
     if (flag === "title") {
-      console.log("heytitle");
-      console.log(action.payload.item.title);
-
       updatedItem = {
         ...itemEdit,
         title: action.payload.item.title,
@@ -54,8 +49,6 @@ const todoReducer = (state, action) => {
         isChecked: false,
       };
     }
-    console.log("heyyyyy");
-    console.log(updatedItem);
 
     let updatedItems = [...state.items];
     updatedItems[itemDoneIndex] = updatedItem;
@@ -66,8 +59,7 @@ const todoReducer = (state, action) => {
   }
   if (action.type === "CLEARDONE") {
     const updatedItems = state.items.filter((item) => !item.isChecked);
-    // console.log("eee");
-    // console.log(updatedItems);
+
     return {
       items: updatedItems,
     };
@@ -85,7 +77,6 @@ const TodoProvider = (props) => {
   );
 
   const addItemHandler = (item) => {
-    // console.log("addItemHandler");
     dispatchTodoAction({ type: "ADD", item: item });
   };
 

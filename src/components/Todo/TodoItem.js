@@ -14,7 +14,7 @@ const TodoItem = (props) => {
   const [error, setError] = useState(null);
   const checkboxHandler = (e) => {
     setIsChecked(e.target.checked);
-    // console.log(isChecked);
+
     if (e.target.checked) {
       todoCtx.edit({ item: props, flag: "done" });
     } else {

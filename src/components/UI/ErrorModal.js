@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import Card from './Card';
+import Card from "./Card";
 
-import classes from './ErrorModal.module.css';
+import classes from "./ErrorModal.module.css";
 
 const Backdrop = (props) => {
   return <div className={classes.backdrop} onClick={props.onConfirm} />;

@@ -9,7 +9,7 @@ const TodoList = () => {
   const items = todoCtx.items;
   const [filteredItems, setFilteredItems] = useState(items);
   const [error, setError] = useState(null);
-  // console.log(items);
+
   useEffect(() => {
     setFilteredItems(items);
   }, [items]);

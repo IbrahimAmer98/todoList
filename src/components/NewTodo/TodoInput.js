@@ -20,7 +20,7 @@ const TodoInput = () => {
         title: enteredTitle,
         status: "Todo",
       };
-      // console.log(taskData);
+
       todoCtx.addItem(taskData);
 
       setEnteredTitle("");

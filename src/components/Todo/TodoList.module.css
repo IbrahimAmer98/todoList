@@ -1,13 +1,12 @@
 .todo_list {
   list-style: none;
-  /* margin-top: 50px; */
-  /* height: 500px; */
+
   max-height: 500px;
   overflow: auto;
 }
 .todo_filter {
   display: flex;
-  /* flex-flow: row wrap; */
+
   justify-content: space-between;
 }
 .text {
